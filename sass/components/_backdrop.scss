@@ -1,0 +1,212 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden{
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0.5;
+  transition-property: opacity, visibility;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 580px;
+  width: 528px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+
+  /* transition:  250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  &:hover,&:focus-visible {
+      .modal-close {
+          use{
+                fill: var(--color-primary-hover);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+      }
+  }
+  .modal-close{
+    use{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-link);
+}
+
+.contacts-form-field {
+  display: block;
+  margin-top: 10px;
+  input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-top: 4px;
+  }
+}
+
+.contact-field-message {
+  width: 100%;
+  height: 100px;
+  padding: 16px 12px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.user {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color);
+}
+
+.contacts-form-field-wrapper {
+  position: relative;
+  display: block;
+}
+
+.contact-field:focus + .contacts-form-icon {
+  fill: var(--color-primary-hover);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  color: var(--main-color-link);
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-field-name,
+.contact-field-phone,
+.contact-field-mail {
+  padding-left: 42px;
+}
+
+.contact-field:focus {
+  border-color: var(--color-primary-hover);
+  outline: none;
+}
+
+.contact-field {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.contacts-form-message-wrapper {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-field-message::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form-text-info {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  &::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-color-link);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  }
+}
+
+.contact-form-text-desc:checked + .contact-form-text-info::before {
+  background-color: var(--color-btn-banner-hover);
+  background-image: url("../images/svg/Vector.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color-btn-banner-hover);
+  background-position: center;
+}
+
+.contact-form-text-desc:checked + .contact-form-text-info {
+  border-color: var(--color-btn-banner-hover);
+}
+
+.contacts-form-link {
+  color: var(--color-primary-hover);
+}
+
+.contact-form-text-desc:focus + .contact-form-text-info::before {
+  background-color: var(--color-primary-hover);
+}
+
+.contacts-form-btn {
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-hover);
+  line-height: 1.88;
+  width: 200px;
+  cursor: pointer;
+  font-family: var(--primary-font-famaly);
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 16px;
+  transition-property: background-color;
+  padding: 10px 32px;
+  &:hover,&:focus{
+      background-color: var(--color-btn-banner-hover);
+  }
+}

@@ -1,0 +1,58 @@
+.main-banner {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-baner/mainbg.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-list {
+  padding-top: 94px;
+}
+
+.main-list__list-page {
+  display: flex;
+}
+
+.main-button {
+  color: var(--color-white);
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-hover);
+  line-height: 1.88;
+  cursor: pointer;
+  font-family: var(--primary-font-famaly);
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  &:hover,
+  &:focus {
+    background-color: var(--color-btn-banner-hover);
+  }
+}
+
+.main-title {
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.36;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
