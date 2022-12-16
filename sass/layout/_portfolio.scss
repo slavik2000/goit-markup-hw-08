@@ -135,6 +135,79 @@
   display: block;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-1 {
+    background-image: url(../../images/portfolio/img@2x\(1\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-2 {
+    background-image: url(../../images/portfolio/img@2x\(2\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-3 {
+    background-image: url(../../images/portfolio/img@2x\(3\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-4 {
+    background-image: url(../../images/portfolio/img@2x\(4\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-5 {
+    background-image: url(../../images/portfolio/img@2x\(5\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-6 {
+    background-image: url(../../images/portfolio/img@2x\(6\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-7 {
+    background-image: url(../../images/portfolio/img@2x\(7\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-8 {
+    background-image: url(../../images/portfolio/img@2x\(8\).png);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .portfolio-img-9 {
+    background-image: url(../../images/portfolio/img@2x\(9\).png);
+  }
+}
+
 .portfolio-text-description {
   position: absolute;
   font-size: 18px;

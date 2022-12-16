@@ -9,6 +9,44 @@
   max-width: 100%;
 }
 
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .works__img:nth-child(1) {
+//     background-image: url(../../images/works/work-1@2x\(3\).jpg);
+//   }
+//   }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .works__img-1 {
+    background-image: url(../../images/works/work-2@2x\(4\).jpg);
+  }
+}
+
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .works__img-2 {
+    background-image: url(../../images/works/work-2@2x\(4\).jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .works__img-3 {
+    background-image: url(../../images/works/work-3@2x\(5\).jpg);
+  }
+}
+
+
 .works__text {
   position: absolute;
   bottom: 0;

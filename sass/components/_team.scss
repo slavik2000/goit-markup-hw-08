@@ -12,8 +12,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:nth-child(1){
-      margin-left: 0;
+  &:nth-child(1) {
+    margin-left: 0;
   }
 }
 
@@ -21,6 +21,39 @@
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .team-person-1 {
+    background-image: url(../../images/comand/pr-designer-@2x\(6.1\).jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .team-person-2 {
+    background-image: url(../../images/comand/developer@2x\(2.1\).jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .team-person-3 {
+    background-image: url(../../images/comand/marketing@2x\(7.1\).jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .team-person-4 {
+    background-image: url(../../images/comand/ui-designer@2x\(3.1\).jpg);
+  }
 }
 
 .team-name {
