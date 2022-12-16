@@ -111,10 +111,26 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #c3c3c3;
+  background-color: var(--color-white);
   width: 100%;
   height: 100vh;
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile-menu-btn {
+  background: none;
+  border: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu__closed-btn {
@@ -208,6 +224,17 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .contacts-header {
+    display: block;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+}
 .filter-item {
   margin-right: 8px;
 }

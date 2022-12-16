@@ -65,17 +65,17 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
-        <button type="button" class="mobile-menu-btn">
+          </ul>
+          <button type="button" class="mobile-menu-btn" js-open-menu>
           <svg class="burger-menu" width="24px" height="16px">
             <use href="./images/svg/symbol-defs.svg#burger-menu-icon"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" js-menu-container>
         <div class="container mobile-menu__container">
-          <button class="mobile-menu__closed-btn">
+          <button type="button" class="mobile-menu__closed-btn" js-close-menu>
             <svg class="mobile-menu__closed-icon" width="40" height="40">
               <use href="./images/svg/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -88,14 +88,32 @@
             <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
           </ul>
           <ul class="contact-information list">
-            <li class="contact-information__item"><a class="contact-information__number" href="tel:+380961111111" >+38 096 111 11 11</a></li>
-            <li class="contact-information__item"><a class="contact-information__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contact-information__item">
+              <a class="contact-information__number" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact-information__item">
+              <a
+                class="contact-information__mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
           <ul class="social-list-menu list">
-            <li class="social-list-menu__item"><a class="social-list-menu__link" href="">Instagram</a></li>
-            <li class="social-list-menu__item" ><a class="social-list-menu__link" href="">Twitter</a></li>
-            <li class="social-list-menu__item" ><a class="social-list-menu__link" href="">Facebook</a></li>
-            <li class="social-list-menu__item" ><a class="social-list-menu__link" href="">LinkedIn</a></li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Instagram</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Twitter</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Facebook</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </div>

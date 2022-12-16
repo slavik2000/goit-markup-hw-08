@@ -1,7 +1,10 @@
 (() => {
-  const mobileMenu = document.querySelector(".js-menu-container");
-  const openMenuBtn = document.querySelector(".js-open-menu");
-  const closeMenuBtn = document.querySelector(".js-close-menu");
+  // const mobileMenu = document.querySelector(".js-menu-container");
+  const mobileMenu = document.querySelector("[js-menu-container]");
+  // const openMenuBtn = document.querySelector(".js-open-menu");
+  const openMenuBtn = document.querySelector("[js-open-menu]");
+  // const closeMenuBtn = document.querySelector(".js-close-menu");
+  const closeMenuBtn = document.querySelector("[js-close-menu]");
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -27,4 +30,3 @@
   });
 })();
 Footer;
-
