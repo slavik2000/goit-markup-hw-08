@@ -27,7 +27,6 @@
   }
 }
 
-
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -45,7 +44,6 @@
     background-image: url(../../images/works/work-3@2x\(5\).jpg);
   }
 }
-
 
 .works__text {
   position: absolute;
@@ -102,4 +100,22 @@
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  // .main-list__item-page:not(:last-child){
+  //   margin-right: 0;
+  // }
+  .main-list__item-page {
+    margin-right: 0;
+  }
+  .main-list__item-page {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-list__list-page {
+    flex-direction: column;
+  }
 }
