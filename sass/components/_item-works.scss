@@ -101,7 +101,7 @@
   // }
   .main-list__list-page {
     // display: flex;
-    flex-direction: column;
+    // flex-direction: column;
   }
 
   .main-list__item-page {
@@ -143,11 +143,16 @@
   }
 }
 
+
+
 @media screen and (max-width: 1200px) {
   .main-list__item-page {
     // width: 270px;
     &:not(:last-child) {
       // margin-right: 30px;
     }
+  }
+  .works{
+    display: none;
   }
 }

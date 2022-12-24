@@ -43,3 +43,31 @@
     border: 1px solid var(--color-primary-hover);
   }
 }
+
+@media screen and (max-width: 479px) {
+  .partner-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .partner-list {
+    flex-wrap: wrap;
+  }
+  .partner-list-item:nth-child(odd) {
+    margin-bottom: 30px;
+
+    &:nth-child(odd) {
+    }
+  }
+}
+
+.partner-list-item:nth-child(odd) {
+  // margin-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .partner-list-item:not(:last-child) {
+    margin-right: 27px;
+  }
+}

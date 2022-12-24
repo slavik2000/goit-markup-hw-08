@@ -31,7 +31,7 @@
 }
 
 .footer-list {
-  display: flex;
+  // display: flex;
   align-items: baseline;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .footer-email input {
-  width: 358px;
+  // width: 358px;
   height: 50px;
   padding: 16px;
   background-color: transparent;
@@ -111,3 +111,20 @@
 .email-button-telegram {
   vertical-align: bottom;
 }
+
+@media screen and (min-width: 480px) {
+.footer-list{
+  flex-direction: column;
+}
+.email-input-form{
+  flex-direction: column;
+}
+.footer-email input {
+  width: 100%;
+}
+}
+
+
+
+
+
