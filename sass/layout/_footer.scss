@@ -3,9 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .logo {
-  margin-bottom: 20px;
-  display: block;
-  padding: 0;
+    margin-bottom: 20px;
+    display: block;
+    padding: 0;
   }
 }
 
@@ -51,12 +51,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
-  &:hover,&:focus{
-      background-color: var(--color-primary-hover);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-hover);
+    border-radius: 50%;
   }
 }
-
 
 .email-text {
   color: var(--color-white);
@@ -103,8 +103,9 @@
   color: var(--color-white);
   margin-left: 12px;
   cursor: pointer;
-  &:hover,&:focus{
-      background-color: var(--color-btn-banner-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--color-btn-banner-hover);
   }
 }
 
@@ -113,18 +114,81 @@
 }
 
 @media screen and (min-width: 480px) {
-.footer-list{
-  flex-direction: column;
+  .footer-list {
+    flex-direction: column;
+  }
+  .email-input-form {
+    flex-direction: column;
+  }
+  .footer-email input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-item {
+    margin: 0;
+    margin-bottom: 60px;
+    .logo {
+      text-align: center;
+    }
+  }
+  .address {
+    text-align: center;
+  }
+  .social-text {
+    text-align: center;
+  }
+  .footer-social-list {
+    justify-content: center;
+  }
+  .footer-social {
+    margin-bottom: 60px;
+  }
+  .email-text {
+    text-align: center;
+  }
+  .btn-footer-input {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.email-input-form{
-  flex-direction: column;
+
+@media screen and (min-width: 768px) {
+  .email-input-form input {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-block {
+    display: flex;
+  }
+
+  .footer-item {
+    margin-right: auto;
+    margin-left: 15%;
+  }
 }
-.footer-email input {
-  width: 100%;
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .email-input-form input {
+    width: 358px;
+  }
+  .footer-item {
+    margin-left: 0;
+    margin-right: 80px;
+  }
+  .footer-social {
+    margin-right: 80px;
+  }
+  .footer-email input {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+  .email-input-form {
+    flex-direction: row;
+  }
 }
-}
-
-
-
-
-
