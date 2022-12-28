@@ -1,5 +1,6 @@
 .filter-item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-item {
@@ -32,7 +33,7 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -53,7 +54,7 @@
 .portfolio-item {
   margin-left: 30px;
   margin-top: 30px;
-  width: calc((100% - 90px) / 3);
+  // width: calc((100% - 90px) / 3);
   position: relative;
 }
 
@@ -228,5 +229,29 @@
       opacity: 1;
       top: 20%;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list {
+    flex-wrap: wrap;
+  }
+  .portfolio-list{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+    .portfolio-list{
+    // justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list{
+    justify-content:center;
+  }
+    .portfolio-list{
+    justify-content: center;
   }
 }

@@ -29,21 +29,21 @@
 // //   }
 // // }
 
-// .nav__link {
-//   font-weight: 500;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   display: block;
-//   position: relative;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   color: var(--main-color-link);
-//   transition-property: color;
-//   &:hover,
-//   &:focus {
-//     color: var(--color-primary-hover);
-//   }
-// }
+.nav__link {
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-color-link);
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: var(--color-primary-hover);
+  }
+}
 
 .active {
   color: var(--color-primary-hover);

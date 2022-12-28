@@ -30,6 +30,17 @@
   }
 }
 
+.nav-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-primary-hover);
+}
+
 .contact-information {
   &__number {
     font-size: 34px;
@@ -81,9 +92,7 @@
 
 // 0px - 1199px
 @media screen and (max-width: 1199px) {
-
 }
-
 
 @media screen and (max-width: 767px) {
   .nav {
@@ -117,6 +126,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 10;
   }
 
   .mobile-menu__closed-btn {
@@ -129,7 +139,7 @@
     line-height: 0;
     cursor: pointer;
     &:hover {
-      fill: var(--color-primary-hover);
+      // fill: var(--color-primary-hover);
     }
   }
   .mobile-menu__container {
@@ -139,6 +149,17 @@
   }
 }
 
+.mobile-menu__closed-btn:hover .mobile-menu__closed-icon use {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.mobile-menu__closed-btn:hover,
+.mobile-menu__closed-btn:focus {
+  color: var(--color-primary-hover);
+  fill: currentColor;
+}
 
 // 768px +
 @media screen and (min-width: 768px) {
@@ -193,7 +214,6 @@
     fill: currentColor;
   }
 }
-
 
 // 1200px +
 @media screen and (min-width: 1200px) {

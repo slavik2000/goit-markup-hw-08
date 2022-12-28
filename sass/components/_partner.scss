@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   &:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
   }
+  // margin-right: 30px;
 }
 
 .partner-list {
@@ -47,18 +48,21 @@
 @media screen and (max-width: 479px) {
   .partner-list {
     flex-direction: column;
+    align-items: center;
+  }
+  .partner-list-item {
+    margin-bottom: 20px;
+
   }
 }
 
 @media screen and (min-width: 480px) {
   .partner-list {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .partner-list-item:nth-child(odd) {
     margin-bottom: 30px;
-
-    &:nth-child(odd) {
-    }
   }
 }
 
@@ -69,5 +73,13 @@
 @media screen and (min-width: 1200px) {
   .partner-list-item:not(:last-child) {
     margin-right: 27px;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .partner-list-item{
+       margin-right: 15px;
+    margin-left: 15px;
   }
 }

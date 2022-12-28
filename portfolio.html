@@ -46,7 +46,10 @@
         </nav>
         <ul class="contacts-header list">
           <li class="contacts-header__item">
-            <a class="contacts-header__mail  link" href="mailto:info@devstudio.com">
+            <a
+              class="contacts-header__mail link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts-header__mail-icon" width="16" height="12">
                 <use
                   href="./images/svg/symbol-defs.svg#icon-envelope-hover"
@@ -56,7 +59,7 @@
             >
           </li>
           <li class="contacts-header__item">
-            <a class="contacts-header__number  link" href="tel:+380961111111">
+            <a class="contacts-header__number link" href="tel:+380961111111">
               <svg class="contacts-header__number-icon" width="10" height="16">
                 <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -64,6 +67,58 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-btn" js-open-menu>
+          <svg class="burger-menu" width="24px" height="16px">
+            <use href="./images/svg/symbol-defs.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" js-menu-container>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__closed-btn" js-close-menu>
+            <svg class="mobile-menu__closed-icon" width="40" height="40">
+              <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="nav-element list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
+          </ul>
+          <ul class="contact-information list">
+            <li class="contact-information__item">
+              <a class="contact-information__number" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact-information__item">
+              <a
+                class="contact-information__mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-list-menu list">
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Instagram</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Twitter</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">Facebook</a>
+            </li>
+            <li class="social-list-menu__item">
+              <a class="social-list-menu__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -367,17 +422,19 @@
           <div class="footer-email">
             <p class="email-text">Підпишіться на розсилку</p>
             <form class="email-input-form">
-            <input type="text" placeholder="E-mail">
-            <button type="submit" class="btn-footer-input">Підписатися
-              <svg class="email-button-telegram" width="24" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-icon-send">
-                </use>
-              </svg>
-            </button>
+              <input type="text" placeholder="E-mail" />
+              <button type="submit" class="btn-footer-input">
+                Підписатися
+                <svg class="email-button-telegram" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>
