@@ -8,7 +8,7 @@
 }
 
 .team-item {
-  margin-left: 30px;
+  margin-bottom: 30px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -90,6 +90,12 @@
   .team-list {
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .team-item {
+    margin-bottom: 30px;
   }
 }
 

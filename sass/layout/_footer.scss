@@ -78,10 +78,12 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .email-input-form {
   display: flex;
+  flex-direction: column;
 }
 
 .btn-footer-input {
@@ -90,8 +92,8 @@
   background-color: var(--color-primary-hover);
   font-family: var(--primary-font-famaly);
   font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
@@ -101,7 +103,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
   color: var(--color-white);
-  margin-left: 12px;
+  // margin-left: 12px;
   cursor: pointer;
   &:hover,
   &:focus {

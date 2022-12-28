@@ -243,3 +243,18 @@
     fill: currentColor;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .social-list-menu {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      margin-bottom: 10px;
+    }
+    &__link {
+      &::after {
+        visibility: hidden;
+      }
+    }
+  }
+}

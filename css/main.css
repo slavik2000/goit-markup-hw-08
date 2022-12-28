@@ -337,6 +337,23 @@ ul {
     fill: currentColor;
   }
 }
+@media screen and (max-width: 480px) {
+  .social-list-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social-list-menu__item {
+    margin-bottom: 10px;
+  }
+  .social-list-menu__link::after {
+    visibility: hidden;
+  }
+}
 .filter-item {
   margin-right: 8px;
   margin-bottom: 15px;
@@ -472,6 +489,7 @@ ul {
 
 .portfolio-img {
   display: block;
+  width: 100%;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -653,12 +671,17 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .email-input-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn-footer-input {
@@ -667,8 +690,6 @@ ul {
   background-color: var(--color-primary-hover);
   font-family: var(--primary-font-famaly);
   font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
@@ -682,7 +703,6 @@ ul {
   -webkit-transition-property: background-color;
   transition-property: background-color;
   color: var(--color-white);
-  margin-left: 12px;
   cursor: pointer;
 }
 .btn-footer-input:hover, .btn-footer-input:focus {
@@ -1207,7 +1227,7 @@ ul {
 }
 
 .team-item {
-  margin-left: 30px;
+  margin-bottom: 30px;
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1281,6 +1301,11 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (max-width: 399px) {
+  .team-item {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
