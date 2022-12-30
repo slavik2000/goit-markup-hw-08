@@ -115,8 +115,6 @@ ul {
 
 .header {
   background-color: var(--color-white);
-  padding-top: 16px;
-  padding-bottom: 16px;
   position: relative;
 }
 
@@ -259,6 +257,17 @@ ul {
   fill: currentColor;
 }
 
+.contacts-header__mail,
+.contacts-header__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -280,9 +289,6 @@ ul {
   }
   .mobile-menu {
     display: none;
-  }
-  .contacts-header__item {
-    margin-bottom: 10px;
   }
   .contacts-header__mail-icon {
     margin-right: 8px;
@@ -335,6 +341,12 @@ ul {
   .contacts-header__mail-icon,
 .contacts-header__number-icon {
     fill: currentColor;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contacts-header__item {
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 480px) {
