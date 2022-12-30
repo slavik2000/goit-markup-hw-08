@@ -12,6 +12,7 @@
   // padding-top: 16px;
   // padding-bottom: 16px;
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .burger-menu {
@@ -131,7 +132,7 @@
 
   .mobile-menu__closed-btn {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 15px;
     background: transparent;
     border: none;
