@@ -1296,26 +1296,6 @@ ul {
   max-width: 100%;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .team-person-1 {
-    background-image: url(../../images/comand/pr-designer-@2x\(6.1\).jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .team-person-2 {
-    background-image: url(../../images/comand/developer@2x\(2.1\).jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .team-person-3 {
-    background-image: url(../../images/comand/marketing@2x\(7.1\).jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .team-person-4 {
-    background-image: url(../../images/comand/ui-designer@2x\(3.1\).jpg);
-  }
-}
 .team-name {
   font-size: 16px;
   letter-spacing: 0.03em;

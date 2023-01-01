@@ -234,7 +234,7 @@
           <h2 class="team-title title-section">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
+              <!-- <img
                 class="team-img team-person-1"
                 src="./images/comand/pr-designer-min.jpg"
                 srcset="
@@ -243,7 +243,26 @@
                 "
                 alt="Продукт дизайнер"
                 width="450"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="./images/comand/pr-designer-mobile@1x.jpg-min.jpg 1x,
+                  ./images/comand/pr-designer-tablet@2x.jpg-min.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/comand/pr-designer-mobile@1x.jpg-min.jpg 1x,
+                  ./images/comand/pr-designer-mobile@2x.jpg-min.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/comand/pr-designer-min.jpg"
+                  alt="Продукт дизайнер"
+                  width="450"
+                  class="team-img team-person-1"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team-person">Product Designer</p>
