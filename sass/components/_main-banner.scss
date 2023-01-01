@@ -90,6 +90,14 @@
     margin-right: auto;
   }
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-banner {
+      background-image: url(../../images/main-baner/main-mobile-x2-min.jpg);
+    }
+  }
+
   .main-title {
     color: var(--color-white);
     text-align: center;
@@ -119,6 +127,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   .main-banner {
+  //     background-image: url(../../images/main-baner/main-tablet-x2-min.jpg);
+  //   }
+  // }
+
   .main-title {
     color: var(--color-white);
     text-align: center;
@@ -130,6 +147,24 @@
     margin-bottom: 28px;
   }
 }
+
+
+
+
+  .main-title {
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.36;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+}
+
+
+
 
 @media screen and (min-width: 768px) {
   .main-banner {
@@ -147,6 +182,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+
+
+
   .main-title {
     color: var(--color-white);
     text-align: center;
@@ -158,6 +197,8 @@
     margin-bottom: 28px;
   }
 }
+
+
 
 @media screen and (min-width: 1200px) {
   .main-banner {
@@ -192,7 +233,7 @@
     flex-wrap: wrap;
     // display: flex;
   }
-  .main-list{
+  .main-list {
     padding-top: 60px;
     padding-bottom: 60px;
   }
