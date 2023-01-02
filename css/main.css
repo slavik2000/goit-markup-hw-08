@@ -377,6 +377,7 @@ ul {
   }
   .nav-element {
     font-size: 30px;
+    margin-bottom: 120px;
   }
   .contact-information__number {
     font-size: 20px;
@@ -1044,13 +1045,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
-  .main-banner {
-    background-image: url(../../images/main-baner/main-mobile-x2-min.jpg);
-  }
-}
-@media screen and (max-width: 480px) {
   .main-title {
     color: var(--color-white);
     text-align: center;
