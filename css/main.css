@@ -143,6 +143,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color;
   transition-property: color;
+  font-weight: 500;
 }
 
 .nav-link:hover,
@@ -154,11 +155,13 @@ ul {
   font-size: 34px;
   color: var(--color-primary-hover);
   text-decoration: none;
+  font-weight: 500;
 }
 .contact-information__mail {
   font-size: 24px;
   color: var(--secondary-color);
   text-decoration: none;
+  font-weight: 500;
 }
 .contact-information__item {
   margin-bottom: 32px;
@@ -187,6 +190,7 @@ ul {
   font-size: 18px;
   color: var(--color-primary-hover);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-item {
@@ -226,6 +230,7 @@ ul {
     visibility: visible;
     pointer-events: auto;
     z-index: 10;
+    position: fixed;
   }
   .mobile-menu__closed-btn {
     position: absolute;
@@ -364,8 +369,23 @@ ul {
   .social-list-menu__item {
     margin-bottom: 10px;
   }
+  .social-list-menu__link {
+    font-size: 14px;
+  }
   .social-list-menu__link::after {
     visibility: hidden;
+  }
+  .nav-element {
+    font-size: 30px;
+  }
+  .contact-information__number {
+    font-size: 20px;
+  }
+  .contact-information__mail {
+    font-size: 14px;
+  }
+  .nav-link {
+    font-weight: 300;
   }
 }
 .filter-item {
@@ -428,7 +448,7 @@ ul {
 }
 
 .portfolio-item {
-  margin-left: 30px;
+  margin-left: 14px;
   margin-top: 30px;
   position: relative;
 }
@@ -1355,12 +1375,12 @@ ul {
   .team-item {
     max-width: 354px;
     margin-right: 15px;
-    margin-left: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-item {
     max-width: 270px;
+    margin-left: 15px;
   }
   .team-item:last-child {
     margin-right: 0;
@@ -1431,7 +1451,6 @@ ul {
 }
 
 .partner-list-item {
-  width: 170px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,16 +1528,37 @@ ul {
   .partner-list-item:nth-child(odd) {
     margin-bottom: 30px;
   }
+  .partner-list-item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .partner-list-item {
+    width: 216px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .partner-list-item:not(:last-child) {
     margin-right: 27px;
+  }
+  .partner-list-item {
+    width: 170px;
   }
 }
 @media screen and (max-width: 1199px) {
   .partner-list-item {
     margin-right: 15px;
     margin-left: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .partner-list-item {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .partner-list-link {
+    width: 200px;
   }
 }
 .backdrop {
@@ -1796,5 +1836,35 @@ ul {
   }
   .contact-form-text-info {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 320px;
+  }
+  .contact-form-text-info::before {
+    height: 12px;
+  }
+  .footer-item {
+    margin-right: 0;
+    text-align: center;
+  }
+  .footer-social {
+    text-align: center;
+  }
+  .footer-social-list {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .email-text {
+    text-align: center;
+  }
+  .address {
+    margin-bottom: 30px;
+  }
+  .social-text {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

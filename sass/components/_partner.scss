@@ -1,5 +1,4 @@
 .partner-list-item {
-  width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -64,16 +63,29 @@
   .partner-list-item:nth-child(odd) {
     margin-bottom: 30px;
   }
+  .partner-list-item{
+    width: 210px;
+  }
 }
 
 .partner-list-item:nth-child(odd) {
   // margin-right: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .partner-list-item{
+    width: 216px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .partner-list-item:not(:last-child) {
     margin-right: 27px;
   }
+  .partner-list-item{
+        width: 170px;
+  }
+
 }
 
 
@@ -81,5 +93,17 @@
   .partner-list-item{
        margin-right: 15px;
     margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partner-list-item{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .partner-list-link{
+    width: 200px;
   }
 }

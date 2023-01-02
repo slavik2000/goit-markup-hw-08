@@ -235,5 +235,32 @@
 }
 
 @media screen and (max-width: 480px) {
-
+.modal{
+  width: 320px;
+}
+.contact-form-text-info{
+  &::before{
+    height: 12px;
+  }
+}
+.footer-item{
+  margin-right: 0;
+  text-align: center;
+}
+.footer-social{
+  text-align: center;
+}
+.footer-social-list{
+margin-bottom:30px;
+justify-content: center;
+}
+.email-text{
+  text-align: center;
+}
+.address {
+    margin-bottom: 30px;
+}
+.social-text{
+  margin-bottom: 10px;
+}
 }
