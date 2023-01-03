@@ -1036,8 +1036,8 @@ ul {
 
 @media screen and (max-width: 480px) {
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/Header\ img.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/Header\ img.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-mobile1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-mobile1.jpg);
     padding-top: 118px;
     padding-bottom: 98px;
     background-repeat: no-repeat;
@@ -1045,21 +1045,23 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-  .main-title {
-    color: var(--color-white);
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.36;
-    font-size: 26px;
-    letter-spacing: 0.06em;
-    font-weight: 900;
-    margin-bottom: 28px;
-  }
 }
 @media screen and (min-width: 480px) {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/Header\(768\)img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/Header\(768\)img.jpg);
+    padding-top: 118px;
+    padding-bottom: 98px;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  .main-banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-mobile1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-mobile1.jpg);
     padding-top: 118px;
     padding-bottom: 98px;
     background-repeat: no-repeat;
@@ -1112,6 +1114,11 @@ ul {
     margin-bottom: 28px;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-banner-tabl {
+    background-image: url(../../images/main-baner/main-tablet-@2x-min.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/mainbg.jpg);
@@ -1133,6 +1140,92 @@ ul {
     letter-spacing: 0.06em;
     font-weight: 900;
     margin-bottom: 28px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-banner-desk {
+    background-image: url(../../images/main-baner/main-desktop-@2x-min.jpg);
+  }
+}
+@media only screen and (min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (min-resolution: 192dpi) and (max-width: 767px), only screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  /* Small screen, retina, stuff to override above media query */
+  .main-banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-mobile1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-mobile1.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-title {
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.36;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+  .main-banner {
+    background-image: url(../../images/main-baner/main-mobile-@2x-min.jpg);
+  }
+}
+@media only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  /* Small screen, retina, stuff to override above media query */
+  .main-banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/mainbg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/mainbg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-title {
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.36;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+  .main-banner {
+    background-image: url(../../images/main-baner/main-tablet-@2x-min.jpg);
+  }
+}
+@media only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: 192dpi) and (min-width: 1200px), only screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  /* Small screen, retina, stuff to override above media query */
+  .main-banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/mainbg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/mainbg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-title {
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.36;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+  .main-banner {
+    background-image: url(../../images/main-baner/main-desktop-@2x-min.jpg);
   }
 }
 @media screen and (max-width: 1200px) {

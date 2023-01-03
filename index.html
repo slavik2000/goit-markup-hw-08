@@ -123,6 +123,22 @@
     <main class="main">
       <!-- Main-banner -->
       <section class="main-banner">
+        <!-- <picture>
+                <source
+                  srcset="
+                    ./images/main-baner/mainbg.jpg  1x,
+                    ./images/main-baner/main-desktop-@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/main-baner/mainbg.jpg"
+                  alt="Продукт дизайнер"
+                  width=""
+                  class=""
+                />
+              </picture> -->
         <div class="container">
           <h1 class="main-title">
             Ефективні рішення для <br />
@@ -199,30 +215,78 @@
           <h2 class="title-works title-section">Чим ми займаємося</h2>
           <ul class="works__list list">
             <li class="works__item">
-              <img
+              <!-- <img
                 class="works__img works__img-1"
                 src="./images/works/work-1-min.jpg"
                 alt="чоловік пише на клавіатурі"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/works/work-1-min.jpg            1x,
+                    ./images/works/work-1-desktop@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/works/work-1-min.jpg"
+                  alt="Продукт дизайнер"
+                  width="450"
+                  class="team-img team-person-1"
+                />
+              </picture>
               <p class="works__text">Десктопні додатки</p>
             </li>
             <li class="works__item">
-              <img
+              <!-- <img
                 class="works__img works__img-2"
                 src="./images/works/work-2-min.jpg"
                 alt="жінка дивится в ноутбук"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/works/work-2-min.jpg            1x,
+                    ./images/works/work-2-desktop@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/works/work-2-min.jpg"
+                  alt="Продукт дизайнер"
+                  width="450"
+                  class="team-img team-person-1"
+                />
+              </picture>
               <p class="works__text">Мобільні додатки</p>
             </li>
             <li class="works__item">
-              <img
+              <!-- <img
                 class="works__img works__img-3"
                 src="./images/works/work-3-min.jpg"
                 alt="цвітова гама на планшеті"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/works/work-3-min.jpg            1x,
+                    ./images/works/work-3-desktop@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/works/work-3-min.jpg"
+                  alt="Продукт дизайнер"
+                  width="450"
+                  class="team-img team-person-1"
+                />
+              </picture>
               <p class="works__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -778,9 +842,13 @@
               class="contact-form-text-desc visually-hidden"
             />
             <label class="contact-form-text-info" for="check">
-              <span> Погоджуюся з розсилкою та приймаю&nbsp; </span>
-
-              <a href="#" class="contacts-form-link">Умови договору</a>
+              <span>
+                Погоджуюся з розсилкою та приймаю&nbsp;<a
+                  href="#"
+                  class="contacts-form-link"
+                  >Умови договору</a
+                >
+              </span>
             </label>
           </div>
           <button type="submit" class="contacts-form-btn">Відправити</button>
