@@ -1225,7 +1225,7 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../../images/main-baner/main-desktop-@2x-min.jpg);
+    background-image: url(../images/main-baner/main-desktop-@2x-min.jpg);
   }
 }
 @media screen and (max-width: 1200px) {
