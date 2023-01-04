@@ -1171,7 +1171,7 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../../images/main-baner/main-mobile-@2x-min.jpg);
+    background-image: url(../images/main-baner/main-mobile-@2x-min.jpg);
   }
 }
 @media only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -1198,7 +1198,7 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../../images/main-baner/main-tablet-@2x-min.jpg);
+    background-image: url(../images/main-baner/main-tablet-@2x-min.jpg);
   }
 }
 @media only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: 192dpi) and (min-width: 1200px), only screen and (min-resolution: 2dppx) and (min-width: 1200px) {
