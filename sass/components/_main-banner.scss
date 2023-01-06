@@ -9,11 +9,6 @@
   }
 }
 
-.main-list__list-page {
-  display: flex;
-  // flex-wrap: wrap;
-}
-
 .main-button {
   color: var(--color-white);
   font-size: 16px;
@@ -68,20 +63,6 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .main-banner {
-      // background-image: url(../../images/main-baner/main-mobile-x2-min.jpg);
-    }
-  }
-
-  .main-title {
-    // color: var(--color-white);
-    // text-align: center;
-    // text-transform: uppercase;
-    // line-height: 1.36;
-    // font-size: 26px;
-    // letter-spacing: 0.06em;
-    // font-weight: 900;
-    // margin-bottom: 28px;
   }
 }
 
@@ -130,7 +111,6 @@
     margin-bottom: 28px;
   }
 }
-
 .main-title {
   color: var(--color-white);
   text-align: center;
@@ -226,8 +206,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../../images/main-baner/mainbg.jpg);
-    // padding-top: 200px;
-    // padding-bottom: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
@@ -339,7 +317,6 @@
 @media screen and (max-width: 1200px) {
   .main-list__list-page {
     flex-wrap: wrap;
-    // display: flex;
   }
   .main-list {
     padding-top: 60px;

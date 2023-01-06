@@ -996,12 +996,6 @@ ul {
     padding-bottom: 30px;
   }
 }
-.main-list__list-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .main-button {
   color: var(--color-white);
   font-size: 16px;
