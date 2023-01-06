@@ -1150,10 +1150,8 @@ ul {
 @media only screen and (min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (min-resolution: 192dpi) and (max-width: 767px), only screen and (min-resolution: 2dppx) and (max-width: 767px) {
   /* Small screen, retina, stuff to override above media query */
   .main-banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-mobile1.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-mobile1.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main-baner/mainbg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-baner/mainbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
@@ -1171,7 +1169,10 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../images/main-baner/main-mobile-@2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-mobile-@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-mobile-@2x-min.jpg);
+    padding-top: 118px;
+    padding-bottom: 98px;
   }
 }
 @media only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -1179,8 +1180,8 @@ ul {
   .main-banner {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/mainbg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/mainbg.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 112px;
+    padding-bottom: 98px;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
@@ -1198,7 +1199,10 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../images/main-baner/main-tablet-@2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-tablet-@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-tablet-@2x-min.jpg);
+    padding-top: 118px;
+    padding-bottom: 98px;
   }
 }
 @media only screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), only screen and (min-resolution: 192dpi) and (min-width: 1200px), only screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -1225,7 +1229,8 @@ ul {
     margin-bottom: 28px;
   }
   .main-banner {
-    background-image: url(../images/main-baner/main-desktop-@2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner/main-desktop-@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner/main-desktop-@2x-min.jpg);
   }
 }
 @media screen and (max-width: 1200px) {
