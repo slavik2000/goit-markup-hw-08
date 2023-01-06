@@ -317,6 +317,8 @@
 @media screen and (max-width: 1200px) {
   .main-list__list-page {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
   .main-list {
     padding-top: 60px;
